@@ -1,0 +1,22 @@
+body
+{
+    background-color: #FFF;
+}
+
+.box
+{
+    border: 7px solid #b5e7a0;
+    background-color: transparent;
+    height: 280px;
+    width: 500px;
+    margin-left: 31.5%;
+    margin-top: 8%;
+}
+
+p
+{
+    text-align: center;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    padding: 22px;
+    font-size: 25px;
+}

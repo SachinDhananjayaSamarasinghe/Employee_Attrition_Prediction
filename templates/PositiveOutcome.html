@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-337.min.css">
+    <link rel="stylesheet" href="../static/css/stylesoutcome.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesoutcome.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <div class="box">
+            <p style="color:black">It is likely that this employee will leave the company.</p>
+            <p style="color:#777">Predicted probabilty of staying in the company: <b> {{ prediction_text }} </b></p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="form-actions" style="margin-top: 100px">
+              <a class="btn btn-info" style="margin-left: 537px" href="{{url_for('home')}}">Home</a>
+            </div>
+          </div>
+        </div>
+
+  </body>
+</html>

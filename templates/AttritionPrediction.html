@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="../static/css/bootstrap-337.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div>
+        <form action="{{url_for('predict')}}" method="post">
+          <div class="banner">
+            <h1>Employee Attrition Prediction</h1>
+          </div>
+          <hr>
+          <i><p class="text-muted">Please fill out the requested information below to check the attrition prediction..!</p></i>
+          <div>
+          <hr><br>
+
+          <div class="col-md-6">
+          <div class="box">
+        Age:
+          <input type="text" name="Age" placeholder="Age" required><br><br>
+        Gender:
+          <select id="Gender" name="Gender" required>
+            <option value="">Gender</option>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+          </select><br><br>
+        Marital Status:
+          <select id="MaritalStatus" name="MaritalStatus" required>
+            <option value="">Marital Status</option>
+            <option value="0">Divorced</option>
+            <option value="1">Married</option>
+            <option value="2">Single</option>
+          </select><br><br>
+        Distance From Home (km):
+          <input  type="text" name="DistanceFromHome" placeholder="Distance From Home" required><br><br>
+        Total Working Years:
+          <input  type="text" name="TotalWorkingYears" placeholder="Total Working Years" required><br><br>
+        No of Companies Worked:
+          <input  type="text" name="NumCompaniesWorked" placeholder="No of Companies" required><br><br>
+        Monthly Income:
+          <input  type="text" name="MonthlyIncome" placeholder="Monthly Income" required><br><br>
+        Job Role:
+          <select id="JobRole" name="JobRole" required>
+            <option value="">Job Role</option>
+            <option value="7">Sales Executive</option>
+            <option value="6">Research Scientist</option>
+            <option value="2">Laboratory Technician</option>
+            <option value="4">Manufacturing Director</option>
+            <option value="0">Healthcare Representative</option>
+            <option value="3">Manager</option>
+            <option value="8">Sales Representative</option>
+            <option value="5">Research Director</option>
+            <option value="1">Human Resources</option>
+          </select><br><br>
+          </div>
+        </div>
+
+        Years at Company:
+          <input  type="text" name="YearsAtCompany" placeholder="Years at Company" required><br><br>
+        Years With Current Management:
+          <input  type="text" name="YearsWithCurrManager" placeholder="Years With Current Management" required><br><br>
+        Years in Current Role:
+          <input  type="text" name="YearsInCurrentRole" placeholder="Years in Current Role" required><br><br>
+        Years Since Last Promotion:
+          <input  type="text" name="YearsSinceLastPromotion" placeholder="Years Since Last Promotion" required><br><br>
+        Job Satisfaction (Please Rate 1 - 5):
+          <input  type="text" name="JobSatisfaction" placeholder="Job Satisfaction" required><br><br>
+        Environment Satisfaction (Please Rate 1 - 5):
+          <input  type="text" name="EnvironmentSatisfaction" placeholder="Environment Satisfaction" required><br><br>
+        Relationship Satisfaction (Please Rate 1 - 5):
+          <input  type="text" name="RelationshipSatisfaction" placeholder="Relationship Satisfaction" required><br><br>
+        Work Life Balance (Please Rate 1 - 5):
+          <input  type="text" name="WorkLifeBalance" placeholder="Work Life Balance" required><br><br>
+
+          <br><br>
+          
+            <button type="submit" class="btn btn-info"> Predict Attrition </button>
+          
+      </form>
+        
+    </div>
+  </body>
+</html>
